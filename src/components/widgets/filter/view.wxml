@@ -1,0 +1,19 @@
+<view class="w-filter-wrap">
+    <view class="w-filter">
+        <view wx:for="{{nodes}}" wx:key="index" class="w-filter-names {{currentFilter._idx === item._idx ? 'w-filter-names-active' : ''}}" bind:tap="filterChange" data-item="{{item}}">
+            <text>{{item._key}}</text>
+            <c-icon name="pull"/>
+        </view>
+        <slot name="title"></slot>
+    </view>
+    <c-drawer position="top" show="{{show}}">
+        <view class="w-filter-group">
+            <slot />
+        </view>
+        
+        <view class="w-operate">
+            <c-button size="l" ghost long bind:tap="cancel">取消</c-button>
+            <c-button size="l" long bind:tap="confirm">确认</c-button>
+        </view>
+    </c-drawer>
+</view>

@@ -1,0 +1,10 @@
+<view class="p-my">
+    <c-item-group class="p-item">
+        <c-item wx:for="{{list}}" wx:key="{{index}}" rightText="{{item.text}}" detail="{{item.detail}}" bind:tap="goPage" data-text="{{item.text}}" data-path="{{item.path}}">
+            <view slot="left" class="p-item-left">
+                <c-icon name="{{item.leftIcon}}}" c-class="p-left-icon" />
+                <text>{{item.name}}</text>
+            </view>
+        </c-item>
+    </c-item-group>
+</view>

@@ -1,0 +1,5 @@
+<view class="c-tag">
+    <text wx:for="{{value}}" :wx:for-index="idx" wx:key="{{idx}}"
+          style="background-color: {{item.bgColor || '#3EC182'}}"
+          class="c-tag-text {{round ? 'p-round' : ''}}">{{item.text}}</text>
+</view>

@@ -1,0 +1,82 @@
+.c-calendar-wrap {
+  background: #fff;
+  position: fixed;
+  z-index: 120;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.c-calendar-wrap .c-calendar-top {
+  background: #00994f;
+  color: #fff;
+  font-size: 36rpx;
+  padding: 24rpx 40rpx;
+}
+.c-calendar-wrap .c-calendar-top .c-year {
+  font-size: 28rpx;
+  margin-bottom: 24rpx;
+}
+.c-calendar-wrap .c-calendar-title {
+  font-size: 32rpx;
+  text-align: center;
+  padding: 48rpx 0;
+  position: relative;
+  font-weight: 600;
+}
+.c-calendar-wrap .c-calendar-title .c-calendar-up-month,
+.c-calendar-wrap .c-calendar-title .c-calendar-next-month {
+  position: absolute;
+  color: #bfbfbf;
+  width: 60rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.c-calendar-wrap .c-calendar-title .c-calendar-up-month {
+  left: 80rpx;
+}
+.c-calendar-wrap .c-calendar-title .c-calendar-next-month {
+  right: 80rpx;
+}
+.c-calendar-wrap .c-calendar-week {
+  display: flex;
+  font-size: 32rpx;
+  color: #999;
+  margin-bottom: 26rpx;
+}
+.c-calendar-wrap .c-calendar-week text {
+  flex: 1;
+  text-align: center;
+  line-height: 1em;
+}
+.c-calendar-wrap .c-calendar-days {
+  font-size: 0;
+  height: 400rpx;
+}
+.c-calendar-wrap .c-calendar-days .c-days-wrap {
+  display: inline-block;
+  font-size: 24rpx;
+  text-indent: 0;
+  width: calc(100% / 7);
+  text-align: center;
+  line-height: 1em;
+  height: 48rpx;
+  line-height: 48rpx;
+  margin-bottom: 20rpx;
+  color: #666;
+}
+.c-calendar-wrap .c-calendar-days .c-days-wrap text {
+  display: inline-block;
+  width: 48rpx;
+}
+.c-calendar-wrap .c-calendar-days .c-checked {
+  background: #00994f;
+  color: #fff;
+  border-radius: 50%;
+}
+.c-calendar-wrap .c-operate {
+  display: flex;
+}
+.c-calendar-wrap .c-operate c-button {
+  flex: 1;
+}

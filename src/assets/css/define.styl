@@ -1,0 +1,63 @@
+// 字号
+$xs = 22rpx; // 最小的说明文本
+$s = 24rpx; // 辅助文本
+$m = 28rpx; // 次要文本
+$l = 32rpx; // 大标题及主要文本
+$xl = 36rpx; // 主标题及主按钮
+
+// 标准色
+$red = #f56449; // 红色及错误(error)
+$pink = #ff6e5b;
+$yellow = #ffae00; // 黄色及警告(warn)
+$green = #00994f; // 绿色及成功(success)
+$blue = #4ca0ff;
+$white = #ffffff;
+
+// 灰度
+$gray_bg = #f2f2f2; // 灰色背景
+$gray_border = #eee; // 灰色边框
+$gray_divide = #d8d8d8; // 灰色分隔线
+$gray_content = #bfbfbf; // 灰色内容
+
+// 文字
+$t_primary = #333333; // 重要文字
+$t_normal = #666666; // 常规文字
+$t_description = #999999; // 描述文字
+$t_placeholder = #bfbfbf; // 提示文字
+
+// 过渡时间
+$transition-time = .2s;
+// 圆角
+$radius = 8rpx;
+
+// 边框
+$border(dir, color = #efefef) {
+    dir = dir && ('-' + dir);
+    border{dir}: 1rpx solid color;
+}
+
+// 清除浮动
+$clear() {
+    &:after {
+        display: block;
+        clear: both;
+        content: "";
+        visibility: hidden;
+        height: 0
+    }
+}
+// 溢出隐藏
+$textwrap() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// 小绿条样式
+$line() {
+    display: inline-block;
+    width:4rpx;
+    height:22rpx;
+    border-radius:2px;
+    background-color: $green;
+}

@@ -1,0 +1,12 @@
+.c-collapse-item .c-title-wrap {
+  border-bottom: 1rpx solid #efefef;
+  line-height: 88rpx;
+  padding: 0 20rpx;
+}
+.c-collapse-item .c-active-icon {
+  display: inline-block;
+  transition: 0.2s all;
+}
+.c-collapse-item .c-active-icon.c-active {
+  transform: rotate(90deg);
+}

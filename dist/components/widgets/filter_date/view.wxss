@@ -1,0 +1,48 @@
+.w-filter-date-wrap {
+  padding: 30rpx;
+}
+.w-filter-date-wrap .w-filter-date:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.w-filter-date-wrap .w-filter-date button {
+  width: calc(33% - 20rpx);
+  float: left;
+  margin: 0 10rpx 20rpx;
+}
+.w-filter-date-wrap .w-custom-date {
+  display: flex;
+  font-size: 24rpx;
+  color: #999;
+  padding: 0 10rpx;
+  margin-top: 24rpx;
+}
+.w-filter-date-wrap .w-custom-date .w-start,
+.w-filter-date-wrap .w-custom-date .w-end {
+  flex: 1;
+}
+.w-filter-date-wrap .w-custom-date .w-start .w-date,
+.w-filter-date-wrap .w-custom-date .w-end .w-date {
+  margin-top: 16rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border: 1rpx solid #efefef;
+  border-radius: 8rpx;
+  text-align: center;
+  color: #00994f;
+}
+.w-filter-date-wrap .w-custom-date .w-start {
+  padding-right: 65rpx;
+}
+.w-filter-date-wrap .w-custom-date .w-end {
+  padding-left: 65rpx;
+}
+.w-filter-date-wrap .w-tips {
+  color: #f56449;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  padding-left: 10rpx;
+}

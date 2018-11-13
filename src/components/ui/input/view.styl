@@ -1,0 +1,23 @@
+@import "../../../assets/css/define.styl";
+
+$prefix = c-input;
+
+.{$prefix}-wrap{
+    position: relative;
+    &{
+        // color: $t_primary;
+        color: $t_normal;
+    }
+    .c-clearable{
+        position: absolute;
+        right: 32rpx;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #BFBFBF;
+        z-index: 100;
+        width: 40rpx;
+        height: 100%;
+        align-items:center;
+        display: flex;
+    }
+}

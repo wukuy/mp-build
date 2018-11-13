@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/home/view",
+    "pages/order/view",
+    "pages/shopping_cart/view",
+    "pages/my/view",
+    "components/examples/view"
+  ],
+  "tabBar": {
+    "selectedColor": "#00994f",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/home/view",
+      "text": "首页",
+      "iconPath": "assets/img/home.png",
+      "selectedIconPath": "assets/img/home_selected.png"
+    }, {
+      "pagePath": "pages/shopping_cart/view",
+      "text": "购物车",
+      "iconPath": "assets/img/shopping.png",
+      "selectedIconPath": "assets/img/shopping_selected.png"
+    }, {
+      "pagePath": "pages/order/view",
+      "text": "订单",
+      "iconPath": "assets/img/order.png",
+      "selectedIconPath": "assets/img/order_selected.png"
+    }, {
+      "pagePath": "pages/my/view",
+      "text": "我的",
+      "iconPath": "assets/img/my.png",
+      "selectedIconPath": "assets/img/my_selected.png"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white",
+    "navigationBarBackgroundColor": "#00994f"
+  }
+}

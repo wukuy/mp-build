@@ -1,0 +1,33 @@
+<view class="c-calendar-wrap">
+    <view class="c-calendar">
+        <view class="c-calendar-top">
+            <view class="c-year">{{year}}</view>
+            <view class="">{{month}}月{{days}}周{{week}}</view>
+        </view>
+        
+        <view class="c-calendar-title">
+            <c-icon class="c-calendar-up-month" name="angle-left" catch:tap="upMonth" />
+            {{year}}年{{month}}月
+            <c-icon class="c-calendar-next-month" name="angle-right" catch:tap="nextMonth" />
+        </view>
+        <view class="c-calendar-week">
+            <text>日</text>
+            <text>一</text>
+            <text>二</text>
+            <text>三</text>
+            <text>四</text>
+            <text>五</text>
+            <text>六</text>
+        </view>
+        <view class="c-calendar-days" style="text-indent: {{100 / 7 * initWeek}}%">
+            <view class="c-days-wrap" wx:for="{{daysCount}}" wx:key="{{item}}" bind:tap="daysSelect" data-days="{{item + 1}}">
+                <text class="{{(item + 1) == days ? 'c-checked' : ''}}">{{item + 1}}</text>
+            </view>
+        </view>
+
+        <view class="c-operate">
+            <c-button ghost size="l" long>取消</c-button>
+            <c-button long size="l" bind:tap="handleTap">确认</c-button>
+        </view>
+    </view>
+</view>

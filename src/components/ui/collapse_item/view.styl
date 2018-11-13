@@ -1,0 +1,18 @@
+@import "../../../assets/css/define.styl";
+
+$prefix = c-collapse-item;
+
+.{$prefix}{
+    .c-title-wrap{
+        $border(bottom);
+        line-height: 88rpx;
+        padding: 0 20rpx;
+    }
+    .c-active-icon{
+        display: inline-block;
+        transition: $transition-time all;
+        &.c-active{
+            transform: rotate(90deg);
+        }
+    }
+}

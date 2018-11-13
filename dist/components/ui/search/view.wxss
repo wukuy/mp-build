@@ -1,0 +1,28 @@
+.c-search {
+  height: 66rpx;
+  line-height: 66rpx;
+  background-color: #fff;
+  padding: 0 80rpx 0 80rpx;
+  border-radius: 8rpx;
+}
+.c-search .c-search-icon-search {
+  margin-left: -50rpx;
+  color: #bfbfbf;
+  font-size: 40rpx;
+}
+.c-search .c-search-volume-box {
+  display: inline-block;
+  width: 80rpx;
+  margin-right: -80rpx;
+  text-align: center;
+  color: #bfbfbf;
+  font-size: 40rpx;
+}
+.c-search .c-search-input {
+  width: 100%;
+  padding-left: 12rpx;
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  transform: translateY(-4rpx);
+}

@@ -1,0 +1,19 @@
+<view class="c-time-line">
+    <view class="c-box" wx:for="{{list}}" wx:for-index="idx" wx:key="idx">
+        <view class="c-date">
+            <view>{{item.dateBranch}}</view>
+            <view class="c-year">{{item.dateYear}}</view>
+        </view>
+        <view class="c-content">
+            <view class="c-spot" style="background-color: {{item.bgc}}">{{item.text}}</view>
+            <view class="p-text-box">
+                <view class="c-title">
+                    {{item.content}}
+                </view>
+                <view class="c-operator">
+                    操作人：{{item.operator || '无'}}
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

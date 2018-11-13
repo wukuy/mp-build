@@ -1,0 +1,8 @@
+<view class="c-nodata-wrap c-class" wx:if="{{show}}">
+    <view class="c-nodata">
+        <view class="c-img">
+            <image src="/assets/img/no_data.png" />
+        </view>
+        <view class="c-title">{{title}}</view>
+    </view>
+</view>

@@ -1,0 +1,29 @@
+{
+  "name": "mp-build",
+  "version": "1.0.0",
+  "description": "this is mini program simple build",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development gulp --gulpfile build/gulp.env.js --watch",
+    "dev": "cross-env NODE_ENV=development gulp --gulpfile build/gulp.env.js",
+    "prod": "cross-env NODE_ENV=production gulp --gulpfile build/gulp.env.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "7",
+    "gulp-clean": "^0.4.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-stylus": "^2.7.0"
+  },
+  "dependencies": {
+  }
+}

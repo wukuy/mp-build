@@ -1,0 +1,4 @@
+<view class="c-badge">
+    <c-icon name="car" c-class="c-badge-icon" />
+    <text wx:if="{{value}}" class="c-badge-text">{{value}}</text>
+</view>

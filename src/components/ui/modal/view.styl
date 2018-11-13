@@ -1,0 +1,63 @@
+@import "../../../assets/css/define.styl";
+
+$prefix = c-modal
+
+.{$prefix}-wrap{
+    color: #333;
+    &.c-mask{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        transition: all $transition-time;
+        // z-index: 99;
+    }
+    &.c-mask-visible{
+        background: rgba(0,0,0,0.7);
+        visibility: visible ;
+    }
+    .c-modal{
+        width: 72%;
+        text-align:center;
+        min-height: 300rpx;
+        background:#fff;
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        transform: scale(.8);
+        opacity: 0;
+        transition: all $transition-time;
+        border-radius: $radius;
+        overflow: hidden;
+        &.c-modal-visible{
+            visibility: visible;
+            transform: scale(1);
+            opacity: 1;
+        }
+        .c-title{
+            font-size: 36rpx;
+            padding-top: 50rpx;
+        }
+        .c-content{
+            flex: 1;
+            padding: 50rpx;
+        }
+        .c-btn{
+            display: flex;
+            c-button{
+                flex: 1;
+            }
+        }
+        c-icon{
+            display: block;
+            font-size: 96rpx;
+            color: #FE835D;
+            text-align: center;
+        }
+    }
+}
