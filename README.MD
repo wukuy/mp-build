@@ -1,4 +1,4 @@
-# 遇到的问题，使用gulp-clean插件清空dist文件报错。
+## 遇到的问题，使用gulp-clean插件清空dist文件报错。
 > 解决方法
 ### gulp->tasks里新建clean任务
 
@@ -33,8 +33,8 @@ gulp.task('default', ['clean'], function(){
 参考内容:
   https://www.cnblogs.com/1wen/p/4586198.html
 
-# 组件编写
+## 组件编写
 参考内容:
     https://github.com/TalkingData/iview-weapp
 
-# ES7、ES6 转 ES5
+## ES7、ES6 转 ES5
