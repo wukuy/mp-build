@@ -1,0 +1,18 @@
+.w-filter-supplier {
+  max-height: 680rpx;
+  overflow-y: auto;
+}
+.w-filter-supplier-list {
+  padding: 20rpx 20rpx 10rpx;
+}
+.w-filter-supplier-list:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.w-filter-supplier-list button {
+  margin: 0 10rpx 20rpx;
+  float: left;
+}

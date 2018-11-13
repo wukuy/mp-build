@@ -1,0 +1,45 @@
+.c-item-wrap {
+  background-color: #fff;
+  border-top: 1rpx solid #efefef;
+  border-bottom: 1rpx solid #efefef;
+}
+.c-item-wrap .c-item {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  padding: 35rpx 20rpx;
+  align-items: center;
+  box-sizing: border-box;
+}
+.c-item-wrap .c-item .c-item-left {
+  flex: auto;
+}
+.c-item-wrap .c-item .c-item-left .c-item-left-text {
+  font-size: 32rpx;
+  color: #333;
+}
+.c-item-wrap .c-item .c-item-right {
+  flex: auto;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 28rpx;
+}
+.c-item-wrap .c-item .c-item-right-content {
+  flex: 1;
+}
+.c-item-wrap .c-item .c-item-right .c-item-right-text {
+  font-size: 28rpx;
+}
+.c-item-wrap .c-item .c-item-right c-icon {
+  color: #bfbfbf;
+}
+.c-item-wrap .c-item .c-item-right c-icon label {
+  font-size: 38rpx;
+  line-height: 1em;
+  margin-left: 10rpx;
+}
+.c-item-wrap .c-t-white {
+  background: #dedede;
+}

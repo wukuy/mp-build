@@ -1,0 +1,16 @@
+<view class="w-class-tree">
+    <c-collapse>
+        <c-collapse-item wx:for="{{classList}}" bind:tap="handleTap" data-item="{{item}}" data-one-idx="{{oneIdx}}" wx:for-index="oneIdx" wx:key="{{oneIdx}}" activeIcon="{{active}}" bind:activeChange="activeChange"  c-class="w-collapse-item" c-title="w-collapse-item-title" active="{{item._active}}" name="1">
+            <view class="w-class-tree-main {{item._active ? 'w-class-tree-main-active' : ''}}">
+                <label></label>
+                {{item.value}}
+            </view>
+            <view slot="content">
+                <view class="w-class-tree-item {{child._active ? 'w-class-tree-item-active' : ''}}" data-one-idx="{{oneIdx}}" data-two-idx="{{idx}}"  wx:for="{{item.childs}}" data-item="{{child}}" wx:for-item="child" wx:for-index="idx" wx:key="idx" catch:tap="handleTap">
+                    <label class="w-class-tree-item-flag"></label>
+                    {{child.value}}
+                </view>
+            </view>
+        </c-collapse-item>
+    </c-collapse>
+</view>
