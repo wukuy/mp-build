@@ -1,5 +1,0 @@
-<view class="c-modify-note c-class">
-    <c-modal show="{{show}}" title="{{title}}" bind:tap="handleTap" zIndex="{{zIndex}}">
-        <textarea value="{{value}}" wx:if="{{show}}" bindinput="handleInput" placeholder="{{placeholder}}" placeholder-style="#bfbfbf" maxlength="{{maxlength}}"/>
-    </c-modal>
-</view>

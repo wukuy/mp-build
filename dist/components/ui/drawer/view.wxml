@@ -1,5 +1,0 @@
-<view class="c-drawer c-class c-mask {{show ? 'c-mask-visible' : ''}}" bind:tap="maskTap">
-    <view class="c-content {{'c-content-' + position}} {{show ? 'c-content-' + position + '-visible' : ''}}" catch:tap="catchTap">
-        <slot></slot>
-    </view>
-</view>

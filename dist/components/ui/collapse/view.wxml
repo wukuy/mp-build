@@ -1,3 +1,0 @@
-<view class="c-collapse" bind:tap="handleTap">
-    <slot ></slot>
-</view>

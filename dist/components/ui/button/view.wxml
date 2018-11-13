@@ -1,3 +1,0 @@
-<button disabled="{{disabled}}" hover-class="c-button-hover" class="c-button {{disabled ? 'c-button-disabled' : ''}} {{type ? ('c-button-type-' + type) : ''}} {{long ? 'c-button-long' : ''}} {{ghost ? 'c-button-ghost' : ''}} {{size ? ('c-button-size-' + size) : ''}} {{shape ? 'c-button-shape-' + shape: ''}}">
-    <slot></slot>
-</button>

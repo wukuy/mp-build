@@ -1,8 +1,0 @@
-{
-    "component": true,
-    "usingComponents": {
-        "c-drawer": "/components/ui/drawer/view",
-        "c-button": "/components/ui/button/view",
-        "c-icon": "/components/ui/icon/view"
-    }
-}

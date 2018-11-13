@@ -1,1 +1,0 @@
-<switch class="c-switch" bindchange="switchChange" checked="{{checked}}" disabled="{{disabled}}"/>

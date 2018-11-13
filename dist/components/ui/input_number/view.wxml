@@ -1,5 +1,0 @@
-<view class="c-input-number">
-    <c-icon capture-catch:tap="_reduce" name="icon-minus" style="color: #e1e1e1" c-class="c-icon-class"/>
-    <input class="c-number-center" value="{{value}}" type="digit" bindinput="changKeyboard" />{{unit}}
-    <c-icon capture-catch:tap="_plus" name="icon-plus" style="color: #00994F" c-class="c-icon-class"/>
-</view>

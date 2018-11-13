@@ -1,4 +1,0 @@
-<view class="c-input-wrap">
-    <input bindinput="handleInput" type="{{type}}" class="c-input" value="{{value}}" placeholder="{{placeholder}}" placeholder-style="#999" disabled="{{disabled}}" focus="{{focus}}"/>
-    <c-icon wx:if="{{clearable && value}}" bind:tap="handleClear" name="close" class="c-clearable"/>
-</view>

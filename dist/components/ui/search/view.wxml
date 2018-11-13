@@ -1,7 +1,0 @@
-<view class="c-search">
-    <c-icon name="search" class="c-search-icon-search"/>
-    <input class="c-search-input" value="{{value}}" bindinput="changKeyboard" placeholder="{{placeholder}}"/>
-    <!--<view class="c-search-volume-box" bind:tap="voice">-->
-        <!--<c-icon class="c-search-icon-volume" name="volume-off"/>-->
-    <!--</view>-->
-</view>
