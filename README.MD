@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ## 遇到的问题，使用gulp-clean插件清空dist文件报错。
-=======
-# 遇到的问题，使用gulp-clean插件清空dist文件报错。
->>>>>>> 9c087d5decb99c3d4a1f5ad35bb2c30e79f3aa6b
 > 解决方法
 ### gulp->tasks里新建clean任务
 
