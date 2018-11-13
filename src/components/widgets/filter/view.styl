@@ -1,0 +1,47 @@
+@import "../../../assets/css/define.styl";
+
+$prefix = w-filter;
+
+.{$prefix}-wrap{
+    .{$prefix}{
+        position: fixed;
+        z-index: 101;
+        top:0;
+        left:0;
+        right:0;
+        display: flex;
+        height: 88rpx;
+        line-height: @height;
+        $border(bottom);
+        background: $white;
+        &-names{
+            flex: 1;
+            text-align: center;
+            color: $t_normal;
+            &-active{
+                color: $green;
+            }
+            text, c-icon{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            c-icon{
+                vertical-align: top;
+                margin-left: 10rpx;
+                color: $t_description;
+            }
+            label{
+                font-size: 14rpx;
+            }
+        }
+    }
+    .{$prefix}-group{
+        margin-top: 88rpx;
+    }
+    .w-operate{
+        display: flex;
+        c-button{
+            flex: 1;
+        }
+    }
+}

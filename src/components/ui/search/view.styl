@@ -1,0 +1,33 @@
+@import "../../../assets/css/define.styl";
+
+$prefix = c-search;
+
+.{$prefix} {
+    height: 66rpx;
+    line-height: 66rpx;
+    background-color: $white;
+    padding: 0 80rpx 0 80rpx;
+    //border: 1px solid #eee;
+    border-radius: 8rpx;
+    .{$prefix}-icon-search {
+        margin-left: -50rpx;
+        color: $gray_content;
+        font-size: 40rpx;
+    }
+    .{$prefix}-volume-box {
+        display: inline-block;
+        width: 80rpx;
+        margin-right: -80rpx;
+        text-align: center;
+        color: $gray_content;
+        font-size: 40rpx;
+    }
+    .{$prefix}-input {
+        width: 100%;
+        padding-left: 12rpx;
+        display: inline-block;
+        vertical-align: middle;
+        color: $t_primary;
+        transform: translateY(-4rpx);
+    }
+}

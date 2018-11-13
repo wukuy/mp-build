@@ -1,0 +1,60 @@
+@import "../../../assets/css/define.styl";
+
+$prefix = w-class-tree;
+
+.{$prefix}{
+    width: 160rpx;
+    $border(right);
+    height: 100%;
+    background: $white;
+    &-main{
+        height: 88rpx;
+        line-height: 88rpx;
+        font-size: 28rpx;
+        padding-left: 20rpx;
+        position: relative;
+        &&-active{
+            color: $green;
+            label{
+                border-left: 10rpx solid $green;
+                position: absolute;
+                left: 0;
+                top: 28rpx;
+                height: 32rpx;
+            }
+        }
+    }
+    &-item{
+        height: 72rpx;
+        line-height: 72rpx;
+        padding-left: 44rpx;
+        color: $t_normal;
+        font-size: 24rpx;
+        position: relative;
+        &-flag{
+            border-radius: 50%;
+            width: 10rpx; 
+            height: 10rpx;
+            background: #bfbfbf;
+            position: absolute;
+            top: 30rpx;
+            left: 22rpx;
+        }
+        
+        &-active{
+            color: $green;
+            &-flag{
+                background: $green;
+            }
+        }
+    }
+}
+
+/* ui组件样式覆盖 */
+.w-collapse-item{
+    $border(bottom);
+    .w-collapse-item-title{
+        border: 0 !important;
+        padding: 0 !important;
+    }
+}

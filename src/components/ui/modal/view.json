@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-button": "../button/view",
+        "c-icon": "../icon/view"
+    }
+}

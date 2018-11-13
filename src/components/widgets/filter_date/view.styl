@@ -1,0 +1,47 @@
+@import "../../../assets/css/define.styl";
+
+$prefix = w-filter-date;
+
+.{$prefix}-wrap{
+    padding: 30rpx;
+    .{$prefix}{
+        $clear();
+        button{
+            width: calc(33% - 20rpx);
+            float: left;
+            margin: 0 10rpx 20rpx;
+        }
+    }
+
+    .w-custom-date{
+        display: flex;
+        font-size: 24rpx;
+        color: $t_description;
+        padding: 0 10rpx;
+        margin-top: 24rpx;
+        .w-start,.w-end{
+            flex: 1;
+            .w-date{
+                margin-top: 16rpx;
+                height: 70rpx;
+                line-height: 70rpx;
+                $border('');
+                border-radius: $radius;
+                text-align: center;
+                color: $green;
+            }
+        }
+        .w-start{
+            padding-right: 65rpx;
+        }
+        .w-end{
+            padding-left: 65rpx;
+        }
+    }
+    .w-tips{
+        color: $red;
+        line-height: 60rpx;
+        font-size: 24rpx;
+        padding-left: 10rpx;
+    }
+}

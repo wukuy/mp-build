@@ -1,0 +1,51 @@
+@import "../../../assets/css/define.styl";
+
+$prefix = c-item;
+
+.{$prefix}-wrap{
+    background-color: $white;
+    $border('top');
+    $border('bottom');
+    .{$prefix}{
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        padding: 35rpx 20rpx;
+        align-items: center;
+        box-sizing: border-box;
+        .c-item-left {
+            flex: auto;
+            .c-item-left-text {
+                font-size: $l;
+                color: $t_primary;
+            }
+        }
+        .c-item-right {
+            flex: auto;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            color: $t_normal;
+            font-size: $m;
+            &-content{
+                flex: 1;
+            }
+            .c-item-right-text {
+                font-size: $m;
+                // color: $t_description;
+            }
+            c-icon{
+                color: $t_placeholder;
+                label{
+                    font-size: 38rpx;
+                    line-height: 1em;
+                    margin-left: 10rpx;
+                }
+            }
+        }
+    }
+
+    .c-t-white{
+        background: #dedede;
+    }
+}

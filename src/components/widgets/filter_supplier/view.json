@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-collapse": "/components/ui/collapse/view",
+        "c-collapse-item": "/components/ui/collapse_item/view",
+        "c-button": "/components/ui/button/view"
+    }
+}

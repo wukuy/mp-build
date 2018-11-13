@@ -1,0 +1,25 @@
+@import '../../../assets/css/define.styl'
+
+$prefix = c-badge;
+.{$prefix} {
+    display: inline-block;
+    position: relative;
+    .{$prefix}-icon {
+        color: $green;
+        font-size: 50rpx;
+    }
+    .{$prefix}-text {
+        position: absolute;
+        top: -20rpx;
+        right: -22rpx;
+        padding: 0 4rpx;
+        min-width: 32rpx;
+        height: 32rpx;
+        line-height: 32rpx;
+        text-align: center;
+        color: $white;
+        font-size: 20rpx;
+        border-radius: 100%;
+        background-color: $red;
+    }
+}

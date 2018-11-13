@@ -1,0 +1,244 @@
+<view>
+    <view class="p-title">UI组件</view>
+    <c-collapse>
+        <c-collapse-item title="Timeline 时间轴">
+            <view slot="content">
+                <c-timeline />
+                <c-timeline />
+                <c-timeline />
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Search 搜索">
+            <view slot="content"  style="padding: 10px;">
+                <c-search />
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Badge 徽标数">
+            <view slot="content"  style="padding: 10px;">
+                <view>
+                    <c-badge value="{{value}}"></c-badge>
+                </view>
+                <view>
+                    <c-badge value="{{9}}"></c-badge>
+                </view>
+                <view>
+                    <c-badge value="{{999}}"></c-badge>
+                </view>
+                <view>
+                    <c-badge value="{{9999}}"></c-badge>
+                </view>
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Tag 标签">
+            <view slot="content"  style="padding: 10px;">
+                <c-tag value="{{[{text: '营', bgColor: ''}, {text: '卫', bgColor: '#DDDDDD'}]}}"/>
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="InputNumber 数量输入">
+            <view slot="content"  style="padding: 10px;">
+                <c-input-number />
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Avatar 头像">
+            <view slot="content"  style="padding: 10px 0; background-color: #eee;">
+                <c-avatar type="material" custom-class="p-avatar-style" src="http://p3pgmbu6w.bkt.clouddn.com/msci_861504034256033_1539902525081"/>放文字
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Collapse 折叠板">
+            <view slot="content">
+                乔纳森·伊夫是一位工业设计师，现任Apple公司设计师兼资深副总裁，英国爵士。他曾参与设计了iPod，iMac，iPhone，iPad等众多苹果产品。除了乔布斯，他是对苹果那些著名的产品最有影响力的人。
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Button 按钮">
+            <view slot="content" class="p-btn-wrap">
+                <view><text>size 不同尺寸</text></view>
+                <c-button shape="circle" size="s">小尺寸</c-button>
+                <c-button shape="circle">默认大小</c-button>
+                <c-button shape="circle" size="l">大尺寸</c-button>
+
+                <view><text>type 类型</text></view>
+                <c-button type="error">删除</c-button>
+                <c-button>主色</c-button>
+
+                <view><text>shape 形状</text></view>
+                <c-button>直角</c-button>
+                <c-button shape="round">圆形</c-button>
+                <c-button shape="arc">圆角</c-button>
+
+                <view><text>ghost 幽灵按钮</text></view>
+                <c-button ghost>幽灵按钮</c-button>
+                <c-button ghost type="error">幽灵按钮</c-button>
+                 <c-button ghost type="success">幽灵按钮</c-button>
+
+                <view><text>long 长按钮 width: 100%</text></view>
+                <c-button long>长按钮</c-button>
+
+                <view><text> 禁用按钮</text></view>
+                <c-button long disabled="{{true}}">长按钮</c-button>
+                <c-button ghost type="error" disabled="{{true}}">幽灵按钮</c-button>
+                <c-button ghost type="error" shape="round" disabled="{{true}}">按钮</c-button>
+                <c-button ghost type="error" shape="round" disabled="{{true}}" size="s">按钮</c-button>
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Icon 图标">
+            <view slot="content" class="p-icon-wrap">
+                <c-icon name="paper-plane"/>
+                <c-icon name="pencil-square"/>
+                <c-icon name="phone-square"/>
+                <c-icon name="plane"/>
+                <c-icon name="plus-square"/>
+                <c-icon name="print"/>
+                <c-icon name="question-circle"/>
+                <c-icon name="random"/>
+                <c-icon name="remove"/>
+                <c-icon name="rss-square"/>
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Modal 对话框">
+            <view slot="content">
+                <c-button bind:tap="showModal">显示对话框</c-button>
+                <c-modal show="{{show}}" type="warning" title="提示">
+                    确定删除92项商品?
+                </c-modal>
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Radio 单选、多选">
+            <view slot="content">
+                <view><text>勾选</text></view>
+                <c-radio bind:change="radioChange" value="0" checked="{{true}}"></c-radio>
+
+                <view><text>不勾选</text></view>
+                <c-radio bind:change="radioChange" value="1" checked="{{false}}"></c-radio>
+
+                <view><text>禁用</text></view>
+                <c-radio bind:change="radioChange" value="2" disabled="{{true}}" checked="{{true}}"></c-radio>
+                <c-radio bind:change="radioChange" value="3" disabled="{{true}}" checked="{{false}}"></c-radio>
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Input 输入框">
+            <view slot="content">
+                <c-input value="默认值" bind:change="inputChange" placeholder="请输入xx内容" clearable/>
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Toast 轻提示">
+            <view slot="content">
+                <c-button bind:tap="showToast" ghost>成功提示</c-button>
+                <c-button bind:tap="showToastNone">信息提示</c-button>
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Drawer 抽屉">
+            <view slot="content" class="p-action-sheet">
+                <c-button bind:tap="activeSheetTap">bottom</c-button>
+                <c-drawer show="{{activeSheetShow}}" position="bottom">
+                    <view>已选商品</view>
+                    <view>土豆</view>
+                    <view>胡萝卜</view>
+                    <view>白菜</view>
+                    <view>菠菜</view>
+
+                    <view><c-button bind:tap="drawerClose" data-close="activeSheetShow">关闭</c-button></view>
+                </c-drawer>
+
+                <c-button bind:tap="activeSheetTap1">top</c-button>
+                <c-drawer show="{{activeSheetShow1}}" position="top">
+                    <view>已选商品</view>
+                    <view>土豆</view>
+                    <view>胡萝卜</view>
+                    <view>白菜</view>
+                    <view>菠菜</view>
+                    <view><c-button bind:tap="drawerClose" data-close="activeSheetShow1">关闭</c-button></view>
+                </c-drawer>
+
+                <c-button bind:tap="activeSheetTap2">left</c-button>
+                <c-drawer show="{{activeSheetShow2}}" position="left">
+                    <view>已选商品</view>
+                    <view>土豆</view>
+                    <view>宽度根据内容撑开</view>
+                    <view><c-button bind:tap="drawerClose" data-close="activeSheetShow2">关闭</c-button></view>
+                </c-drawer>
+
+                <c-button bind:tap="activeSheetTap3">right</c-button>
+                <c-drawer show="{{activeSheetShow3}}" position="right">
+                    <view>已选商品</view>
+                    <view>土豆</view>
+                    <view>宽度根据内容撑开</view>
+                    <view><c-button bind:tap="drawerClose" data-close="activeSheetShow3">关闭</c-button></view>
+                </c-drawer>
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Switch 切换开关">
+            <view slot="content">
+                <c-switch bind:switchChange="_switchChange" checked="{{checked}}"></c-switch>
+            </view>
+        </c-collapse-item>
+        <c-collapse-item title="Calendar 日历">
+            <view slot="content">
+                <c-calendar />
+            </view>
+        </c-collapse-item> 
+
+        <c-collapse-item title="ItemGroup 项">
+            <view slot="content" style="padding: 10px 0; background-color: #eee;">
+                <c-item-group>
+                    <c-item leftText="文字" rightText="右边文字"></c-item>
+                    <c-item leftText="文字" rightText="右边文字"></c-item>
+                </c-item-group>
+            </view>
+        </c-collapse-item>
+
+         <c-collapse-item title="Swiper 轮播图">
+            <view slot="content">
+                <view>indicatorDots</view>
+                <c-swiper imgUrls="{{['http://p2fqtitdm.bkt.clouddn.com/restaurant/banner1.jpg', 'http://p2fqtitdm.bkt.clouddn.com/restaurant/banner2.jpg']}}"/>
+                <view>indicatorIndex</view>
+                <c-swiper height="620" indicatorDots="{{false}}" imgUrls="{{['http://120.55.195.152:8080/canzhi/api/image/p/083e0fa48b7e57c3b9133890bec92cee', 'http://120.55.195.152:8080/canzhi/api/image/p/5fd35eada390858af456d36cf69478ce']}}"/>
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Nodata 无数据占位">
+            <view slot="content">
+                <c-nodata show="{{true}}" />
+            </view>
+        </c-collapse-item>
+    </c-collapse>
+
+    <view class="p-title">业务组件</view>
+    <c-collapse>
+        <c-collapse-item title="ClassTree 分类树">
+            <view slot="content">
+                <c-class-tree  data="{{treeData}}" />
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="Filter 过滤器">
+            <view slot="content">
+                <view>请操作顶部筛选组</view>
+                <c-filter>
+                    <c-filter-date/>
+                    <c-filter-state/>
+                    <c-filter-supplier/>
+                </c-filter>
+            </view>
+        </c-collapse-item>
+
+        <c-collapse-item title="ModifyNote 修改备注">
+            <view slot="content">
+                <c-modify-note bind:confirm="modifyNoteConfirm" show="{{true}}"/>
+            </view>
+        </c-collapse-item>
+    </c-collapse>
+</view>

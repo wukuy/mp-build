@@ -1,0 +1,86 @@
+@import "../../../assets/css/define.styl";
+
+$prefix = c-calendar;
+
+.{$prefix}-wrap{
+    background: $white;
+    position: fixed;
+    z-index: 120;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    .{$prefix}-top{
+        background: $green;
+        color: $white;
+        font-size: 36rpx;
+        padding: 24rpx 40rpx;
+        .c-year{
+            font-size: 28rpx;
+            margin-bottom: 24rpx;
+        }
+    }
+    .{$prefix}-title{
+        font-size: 32rpx;
+        text-align: center;
+        padding: 48rpx 0;
+        position: relative;
+        font-weight: 600;
+        .{$prefix}-up-month,.{$prefix}-next-month{
+            position: absolute;
+            color: #BFBFBF;
+            width: 60rpx;
+            height: 40rpx;
+            line-height: @height;
+        }
+        .{$prefix}-up-month{
+            left: 80rpx;
+        }
+        .{$prefix}-next-month{
+            right: 80rpx;
+        }
+    }
+    .{$prefix}-week{
+        display: flex;
+        font-size: 32rpx;
+        color: $t_description;
+        margin-bottom: 26rpx;
+        text{
+            flex: 1;
+            text-align: center;
+            line-height: 1em;
+        }
+    }
+    .{$prefix}-days{
+        font-size: 0;
+        height: 400rpx;
+        .c-days-wrap{
+            display: inline-block;
+            font-size: 24rpx;
+            text-indent: 0;
+            width: calc(100% / 7);
+            text-align: center;
+            line-height: 1em;
+            height: 48rpx;
+            line-height: 48rpx;
+            margin-bottom: 20rpx;
+            color: $t_normal;
+            text{
+                display: inline-block;
+                width: 48rpx;
+            }
+        }
+        .c-checked{
+            background: $green;
+            color: $white;
+            border-radius: 50%;
+        }
+    }
+
+    .c-operate{
+        display: flex;
+        c-button{
+            flex: 1;
+        }
+    }
+}

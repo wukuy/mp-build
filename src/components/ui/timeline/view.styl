@@ -1,0 +1,57 @@
+@import "../../../assets/css/define.styl";
+
+$prefix = c-time-line;
+
+.{$prefix}{
+    padding: 80rpx 20rpx 20rpx;
+    .c-box {
+        $clear();
+        font-size: $m;
+    }
+    .c-date {
+        float: left;
+        color: $t_normal;
+        font-size: $s;
+        text-align: center;
+        transform: translateY(-56rpx);
+        .c-year {
+            font-size: 20rpx;
+        }
+    }
+    .c-content {
+        position: relative;
+        margin-left: 150rpx;
+        border-left: 1rpx solid #e1e1d1;
+        padding: 0 20rpx 40rpx 40rpx;
+        .p-text-box {
+            transform: translateY(-56rpx);
+            .c-title {
+                font-size: $l;
+                color: $t_primary;
+                margin-bottom: 20rpx;
+            }
+            .c-operator {
+                font-size: $s;
+                color: $t_description;
+            }
+        }
+    }
+    .c-spot {
+        position: absolute;
+        top: -40rpx;
+        left: -20rpx;
+        width: 40rpx;
+        height: 40rpx;
+        font-size: $s;
+        color: $white;
+        text-align: center;
+        line-height: 40rpx;
+        border-radius: 100%;
+        background-color: $t_placeholder;
+    }
+    .c-box:last-child {
+        >.c-content {
+            border-left: none;
+        }
+    }
+}

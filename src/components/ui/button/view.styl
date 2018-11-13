@@ -1,0 +1,73 @@
+@import "../../../assets/css/define.styl";
+
+$prefix = c-button;
+
+.{$prefix}{
+    padding: 0 40rpx;
+    display: inline-block;
+    height: 88rpx;
+    line-height: @height;
+    background: $green;
+    color: #fff;
+    font-size: 32rpx;
+    border-radius: 0px;
+    &::after {
+        border: 0;
+    }
+
+    &&-shape-round{
+        border-radius: (@height / 2);
+    }
+    &&-shape-arc{
+        border-radius: $radius;
+    }
+    &&-size-l{
+        height: 98rpx;
+        line-height: 98rpx;
+        font-size: 36rpx;
+    }
+    &&-size-s{
+        height: 64rpx;
+        line-height: 64rpx;
+        font-size: 24rpx;
+    }
+    &&-long{
+        display: block;
+    }
+    &&-type-error{
+        background: $red;
+        $border('',$red);
+    }
+    &&-type-info{
+        background: $gray_bg;
+        // $border('',$gray_bg);
+        color: $t_description;
+    }
+
+    &&-disabled{
+        background: #d8d8d8;
+        color: $white;
+    }
+    &&-ghost{
+        // background: rgba(0,0,0,0);
+        background: $white;
+        $border('');
+        color: $t_primary;
+        &.{$prefix}-type-error{
+            color: $red;
+            $border('', @color);
+        }
+        &.{$prefix}-type-success{
+            color: $green;
+            $border('', @color);
+        }
+        &.{$prefix}-disabled{
+            $border('', #d8d8d8);
+            color: $t_description;
+            background: $white;
+        }
+    }
+    &&-hover{
+        opacity: 0.7;
+    }
+}
